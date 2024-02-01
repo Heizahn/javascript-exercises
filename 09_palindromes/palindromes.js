@@ -1,5 +1,6 @@
 const palindromes = function (str) {
 	let strInv = ""
+	str = str.toLowerCase().replace(/[^a-z0-9]/g, "")
 
 	for (let char of str) {
 		strInv = char + strInv
